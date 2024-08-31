@@ -1,0 +1,40 @@
+{
+    "name": "CCStreak",
+    "description": "A chrome extension to track your codeforces streak and provide you daily with random problems to solve.",
+    "version": "1.0.1",
+    "manifest_version": 3,
+    "web_accessible_resources": [
+        {
+            "resources": [
+                "assets/*"
+            ],
+            "matches": [
+                "https://www.codechef.com/*"
+            ]
+        }
+    ],
+    "icons": {
+        "16": "assets/icon16.png",
+        "48": "assets/icon48.png",
+        "128": "assets/icon128.png"
+    },
+    "permissions": [
+        "storage",
+        "activeTab",
+        "scripting"
+    ],
+    "content_scripts": [
+        {
+            "matches": [
+                "https://www.codechef.com/*"
+            ],
+            "js": [
+                "js/main.js"
+            ],
+            "css": [
+                "css/main.css"
+            ],
+            "run_at": "document_end"
+        }
+    ]
+}
