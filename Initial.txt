@@ -1,0 +1,9 @@
+npm init -y
+npm install --save mysql express sequelize mysql2
+npm install --save-dev nodemon
+package.json("start": "node app.js","dev": "nodemon app.js") in scripts
+npm run dev
+
+mongodb: 
+mongodb+srv://Anil:<password>@cluster0.lemlj6u.mongodb.net/?retryWrites=true&w=majority
+npm i mongoose
